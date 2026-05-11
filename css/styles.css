@@ -1,0 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: gray;
+}
+
+.mainSection{
+    display: flex;
+    flex-direction: column;
+}
+
+#services{
+    background-color: red;
+}
