@@ -4,12 +4,106 @@
     box-sizing: border-box;
     background-color: gray;
 }
+/* NAV */
 
+.hamburger{
+    display: none;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4rem;
+    background-color: rgba(255, 166, 0, 0.226);
+
+}
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+
+}
+.nav-links a{
+    text-decoration: none;
+    color: rgb(202, 131, 0);
+}
+
+/* HERO */
+.hero{
+    height: 30rem;
+    margin-bottom: 10rem;
+}
+
+.hero-container{
+    display: flex;
+    align-items: center;
+    gap: 140px;
+    padding:15px;
+    justify-content: space-around;
+
+}
+.imgContHero{
+    width: 320px;
+    height: 450px;
+}
+.imgContHero img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+
+/* MAIN */
 .mainSection{
     display: flex;
     flex-direction: column;
+    gap: 40px;
+    align-items: center;
 }
 
-#services{
-    background-color: red;
+/* Services */
+.services h2{
+    text-align: center;
+    padding-bottom: 15px;
 }
+.services-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 8rem;
+    grid-template-areas: 
+    "pr1 pr1 pr1 pr1"
+    "pr2 pr2 pr3 pr3"
+    "pr4 pr4 pr4 pr4"
+    ;
+    place-items: center;
+}
+
+#card1{grid-area: pr1;}
+#card2{grid-area: pr2;}
+#card3{grid-area: pr3;}
+#card4{grid-area: pr4;}
+
+/* Porftolio */
+
+.portfolio-lista{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 8rem;
+    padding: 0 2rem;
+    grid-template-areas: 
+    "port1 port1 . ."
+    ". . port2 port2"
+    "port3 port3 . ."
+    ". . port4 port4"
+    ;
+}
+
+#portf1{
+    grid-area: port1;
+    
+}
+#portf2{grid-area: port2;}
+#portf3{grid-area: port3;}
+#portf4{grid-area: port4;}

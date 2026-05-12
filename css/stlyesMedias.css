@@ -1,0 +1,28 @@
+@media (max-width: 768px){
+/* NAV */
+    .hamburger{
+        display: block;
+    }
+
+    .nav-links{
+        display: none;
+    }
+
+    .imgContHero{
+        width: 320px;
+        height: 450px;
+    }
+
+    .hero-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+
+
+
+
+    
+}

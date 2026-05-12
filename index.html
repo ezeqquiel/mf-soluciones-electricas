@@ -8,6 +8,7 @@
     <title>Electricista en Rosario | Instalaciones y Urgencias</title>
     
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/stlyesMedias.css">
 
 </head>
 
@@ -43,25 +44,30 @@
 
     <div class="hero-container">
 
-        <h1>Electricista en Rosario 24hs</h1>
+        <div class="cajaHero">
+            <h1>Electricista en Rosario 24hs</h1>
 
-        <p>
-            Instalaciones eléctricas, reparaciones y urgencias.
-            Atención rápida en toda la ciudad.
-        </p>
+            <p>
+                Instalaciones eléctricas, reparaciones y urgencias.
+                Atención rápida en toda la ciudad.
+            </p>
 
-        <div class="hero-buttons">
+            <div class="hero-buttons">
 
-            <a href="#" class="btn-primary">
-                Solicitar servicio
-            </a>
+                <a href="#" class="btn-primary">
+                    Solicitar servicio
+                </a>
 
-            <a href="#" class="btn-secondary">
-                Llamar ahora
-            </a>
+                <a href="#" class="btn-secondary">
+                    Llamar ahora
+                </a>
 
+            </div>
         </div>
 
+        <div class="imgContHero">
+            <img src="img/trabajo3.jpg" alt="IMGELECTRICISTA">
+        </div>
     </div>
 
 </section>
@@ -77,25 +83,25 @@
 
     <div class="services-grid">
 
-        <div class="service-card">
+        <div class="service-card" id="card1">
             <img src="" alt="instalaciones">
             <h3>Instalaciones eléctricas</h3>
             <p>Instalaciones seguras para hogares y comercios.</p>
         </div>
 
-        <div class="service-card">
+        <div class="service-card" id="card2">
             <img src="" alt="reparaciones">
             <h3>Reparaciones</h3>
             <p>Solución rápida a fallas eléctricas.</p>
         </div>
 
-        <div class="service-card">
+        <div class="service-card" id="card3">
             <img src="" alt="tableros">
             <h3>Tableros eléctricos</h3>
             <p>Instalación y mantenimiento de tableros.</p>
         </div>
 
-        <div class="service-card">
+        <div class="service-card" id="card4">
             <img src="" alt="urgencias">
             <h3>Urgencias 24hs</h3>
             <p>Atención inmediata en cortes o fallas eléctricas.</p>
@@ -109,18 +115,43 @@
 <!-- PORTFOLIO -->
 
 <section class="portfolio" id="portfolio">
+  <h2>Trabajos Realizados</h2>
 
-    <h2>Trabajos Realizados</h2>
+    <div class="portfolio-lista">
 
-    <div class="portfolio-grid">
+        <div class="portfolio-item" id="portf1">
+          <img src="" alt="Proyecto DIKA">
+          <div class="portfolio-texto">
+            <h3>Moreno</h3>
+            <p>Reforma integral junto a Dika. Renovamos por completo el espacio cuidando cada detalle. La iluminación fue clave para dar calidez y estilo.</p>
+          </div>
+        </div>
 
-        <img src="" alt="Trabajos Realizados1">
-        <img src="" alt="Trabajos Realizados2">
-        <img src="" alt="Trabajos Realizados3">
-        <img src="" alt="Trabajos Realizados4">
+        <div class="portfolio-item" id="portf2">
+          <img src="" alt="Proyecto Kentucky">
+          <div class="portfolio-texto">
+            <h3>Kentucky</h3>
+            <p>Junto a Estudio M realizamos una trama de luz entre pared y techo usando flejes de aluminio con tiras LED.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-item" id="portf3">
+          <img src="" alt="San Lorenzo">
+          <div class="portfolio-texto">
+            <h3>San Lorenzo</h3>
+            <p>Obra y dirección DIKA. Instalación completa con foco en seguridad y eficiencia energética.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-item" id="portf4">
+          <img src="" alt="Proyecto 4">
+          <div class="portfolio-texto">
+            <h3>Proyecto 4</h3>
+            <p>Descripción breve del trabajo realizado.</p>
+          </div>
+        </div>
 
     </div>
-
 </section>
 
 
@@ -222,7 +253,7 @@
 </a>
 
 
-<script src="script.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 </html>
