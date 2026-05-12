@@ -2,10 +2,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: gray;
 }
-/* NAV */
 
+
+
+
+/* NAV */
 .hamburger{
     display: none;
 }
@@ -36,6 +38,7 @@
 
 .hero-container{
     display: flex;
+    background: #f7f7f7;
     align-items: center;
     gap: 140px;
     padding:15px;
@@ -61,6 +64,9 @@
 
 
 /* MAIN */
+section{
+    scroll-margin-top: 10px;
+}
 .mainSection{
     display: flex;
     flex-direction: column;
@@ -69,6 +75,9 @@
 }
 
 /* Services */
+.services{
+    background: #f7f7f7;
+}
 .services h2{
     text-align: center;
     padding-bottom: 15px;
@@ -92,6 +101,9 @@
 #card4{grid-area: pr4;}
 
 /* Porftolio */
+.portfolio{
+    background: #f7f7f7;
+}
 .portfolio h2{
     text-align: center;
 }
@@ -119,16 +131,136 @@
 
 
 /* ABOUT */
+.about{
+    background: #f7f7f7;   
+}
 .about-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     gap: 3.5rem;
     grid-template-areas:
     "ab1 ab1 ab1 ."
+    "ab1 ab1 ab1 ."
+    ". ab2 ab2 ab2"
     ". ab2 ab2 ab2"
     ;
 }
 
-#about1{grid-area: ab1;}
-#about2{grid-area: ab2;}
+#ab1{grid-area: ab1;}
+#ab2{grid-area: ab2;}
+
+/* BRANDS */
+.brands{
+    background: #f7f7f7;
+}
+.brands h2{
+    text-align: center;
+}
+.brands-logos{
+    display: flex;
+    gap: 10rem;
+    padding: 1rem 0;
+}
+
+/* contacto */
+.contact {
+  padding: 20px;
+  width: 90%;
+  background: #f7f7f7;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.contact-subtitulo {
+  color: #666;
+  margin-bottom: 40px;
+  font-size: 15px;
+}
+
+#contact form {
+  max-width: 520px;
+  margin: 0 auto 50px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+  text-align: left;
+}
+
+#contact input,
+#contact textarea {
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1.5px solid #e0e0e0;
+  font-size: 15px;
+  font-family: inherit;
+  transition: border-color 0.2s ease;
+  outline: none;
+  background: #fafafa;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  border-color: #0a7cff;
+  background: white;
+}
+
+#contact textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+#contact button {
+  padding: 14px;
+  border: none;
+  background: #0a7cff;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+#contact button:hover {
+  background: #005fd1;
+  transform: translateY(-1px);
+}
+
+#contact button:active {
+  transform: translateY(0);
+}
+
+.GoogleMaps {
+  margin-top: 20px;
+}
+
+.GoogleMaps iframe {
+  border-radius: 16px;
+  width: 80%;
+  height: 400px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+}
+
+/* Footer */
+.footer{
+    background: #cccccc;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 2rem;
+
+}
+.footRedes{
+    display: flex;
+    gap: 3rem;
+}
