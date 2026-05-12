@@ -29,6 +29,10 @@
     text-decoration: none;
     color: rgb(202, 131, 0);
 }
+.logo img{
+    width: 2.5rem;
+    height: 2.5rem;
+}
 
 /* HERO */
 .hero{
@@ -100,6 +104,12 @@ section{
 #card3{grid-area: pr3;}
 #card4{grid-area: pr4;}
 
+.service-card img{
+    width: 25rem;
+}
+
+
+
 /* Porftolio */
 .portfolio{
     background: #f7f7f7;
@@ -119,6 +129,9 @@ section{
     "port3 port3 . ."
     ". . port4 port4"
     ;
+}
+.portfolio-lista img{
+    width: 25rem;
 }
 
 #portf1{
@@ -146,7 +159,14 @@ section{
     ". ab2 ab2 ab2"
     ;
 }
-
+.about-image{
+    text-align: center;
+}
+.about-image img{
+    width: 25rem;
+    height: 12rem;
+    padding-bottom: 15px;
+}
 #ab1{grid-area: ab1;}
 #ab2{grid-area: ab2;}
 
@@ -161,6 +181,9 @@ section{
     display: flex;
     gap: 10rem;
     padding: 1rem 0;
+}
+.brands-logos div img {
+    width: 10rem;
 }
 
 /* contacto */
@@ -263,4 +286,12 @@ section{
 .footRedes{
     display: flex;
     gap: 3rem;
+    text-align: center;
+}
+.footRedes div img{
+    width: 2rem;
+}
+
+.whatsapp-button img{
+    width: 4.5rem;
 }
