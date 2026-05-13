@@ -19,7 +19,19 @@
         align-items: center;
         gap: 50px;
     }
-
+    .hero-overlay {
+        padding: 0 6%;
+        justify-content: center;
+        text-align: center;
+      }
+  
+      .hero-botones {
+        justify-content: center;
+      }
+  
+      .hero {
+        background-attachment: scroll; /* parallax off en mobile */
+      }
 
 
 

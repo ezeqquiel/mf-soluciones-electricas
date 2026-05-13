@@ -47,11 +47,24 @@
 
 
 
+/* header */
+header{
+    margin-bottom:10rem;;
+}
+
+
+
+
+
+
+
+
+
 
 /* HERO */
 .hero {
   position: relative;
-  height: 100vh;
+  height: 105vh;
   background-image: url('/img/trabajo1.jpg');
   background-size: cover;
   background-position: center;
@@ -156,6 +169,11 @@
 
 
 
+  
+
+
+
+
 
 
 
@@ -177,11 +195,17 @@ section{
 
 
 
+
+
+
+
 /* Services */
 .services {
   padding: 80px 40px;
   background: #1A2B4A;
   text-align: center;
+  border-radius: 15px;
+
 }
 
 .services h2 {
@@ -254,6 +278,13 @@ section{
 
 
 
+
+
+
+
+
+
+
 /* Porftolio */
 .portfolio{
     background: #f7f7f7;
@@ -293,6 +324,13 @@ section{
   display: block;
   margin-left: auto;
 } 
+
+
+
+
+
+
+
 
 
 
@@ -345,6 +383,14 @@ section{
     text-align: center;
     padding: 0 20px;
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -438,6 +484,14 @@ section{
   height: 400px;
   box-shadow: 0 8px 30px rgba(0,0,0,0.08);
 }
+
+
+
+
+
+
+
+
 
 
 
