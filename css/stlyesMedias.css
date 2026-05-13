@@ -33,7 +33,31 @@
         background-attachment: scroll; /* parallax off en mobile */
       }
 
+        .portfolio-item,
+        .deDerecha {
+          flex-direction: column;
+          transform: translateY(40px);
+        }
 
+        .portfolio-item img {
+          width: 100%;
+          height: 250px;
+        }
+
+        .about-container {
+          flex-direction: column;
+        }
+
+        .brands-logos {
+          grid-template-columns: 1fr;
+        }
+
+        .portfolio,
+        .about,
+        .brands,
+        .contact {
+          padding: 60px 20px;
+        }
 
 
     
