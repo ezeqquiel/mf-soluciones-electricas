@@ -16,33 +16,82 @@ body{
 
 
 /* NAV */
-.hamburger{
-    display: none;
-}
-.nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 4rem;
-
-}
-.nav-links{
-    display: flex;
-    list-style: none;
-    gap: 3rem;
-
-}
-.nav-links a{
-    text-decoration: none;
-    color: rgb(202, 131, 0);
-}
-.logo img{
-    width: 2.5rem;
-    height: 2.5rem;
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: transparent;
+  transition: background 0.4s ease, padding 0.4s ease, box-shadow 0.4s ease;
 }
 
+/* Navbar cuando scrolleás */
+.nav.scrolled {
+  background: #111c2d;
+  padding: 12px 40px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
 
+.logo img {
+  height: 45px;
+  transition: height 0.4s ease;
+}
 
+.nav.scrolled .logo img {
+  height: 36px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Línea animada debajo del link */
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #F5A623;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #F5A623;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  color: white;
+  font-size: 26px;
+  cursor: pointer;
+}
 
 
 
@@ -181,6 +230,7 @@ header{
 /* MAIN */
 section{
     scroll-margin-top: 10px;
+    border-radius: 16px;
 }
 .mainSection{
     display: flex;
@@ -290,6 +340,7 @@ section{
   padding: 80px 40px;
   background: #1A2B4A;
   text-align: center;
+  width: 85%;
 }
 
 .portfolio h2 {
@@ -525,6 +576,8 @@ section{
   padding: 80px 40px;
   background: #F4F4F4;
   text-align: center;
+  width: 80%;
+  margin-bottom: 10rem;
 }
 
 .contact h2 {
@@ -624,15 +677,123 @@ section{
 /* ===== FOOTER ===== */
 .footer {
   background: #111c2d;
-  padding: 30px 40px;
-  text-align: center;
   border-top: 2px solid #F5A623;
+  padding: 60px 40px 0;
 }
 
-.footer p {
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #2d4270;
+}
+
+.footer-brand img {
+  height: 45px;
+  margin-bottom: 16px;
+}
+
+.footer-brand p {
   color: #a0aec0;
   font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 20px;
 }
+
+.footer-redes {
+  display: flex;
+  gap: 12px;
+}
+
+.footer-redes a {
+  width: 36px;
+  height: 36px;
+  background: #243654;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #F5A623;
+  font-size: 16px;
+  text-decoration: none;
+  border: 1px solid #2d4270;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.footer-redes a:hover {
+  background: #F5A623;
+  color: #1A2B4A;
+  transform: translateY(-3px);
+}
+
+.footer-links h4,
+.footer-contacto h4 {
+  color: #F5A623;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links a {
+  color: #a0aec0;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #F5A623;
+}
+
+.footer-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-contacto a {
+  color: #a0aec0;
+  text-decoration: none;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s ease;
+}
+
+.footer-contacto a:hover {
+  color: #F5A623;
+}
+
+.footer-contacto i {
+  color: #F5A623;
+  width: 16px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-bottom p {
+  color: #4a5568;
+  font-size: 13px;
+}
+
+
 
 
 .whatsapp-button img{

@@ -1,17 +1,3 @@
-    /* Animaciones de TRABAJOS a medida que se muestra el viewport */
-    const items = document.querySelectorAll('.portfolio-item');
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-      }, { threshold: 0.2 }); // se activa cuando el 20% del elemento es visible
-
-    items.forEach(item => observer.observe(item));
-
-
 // Portfolio
 const portfolioItems = document.querySelectorAll('.portfolio-item');
 const observerPortfolio = new IntersectionObserver((entries) => {
@@ -25,6 +11,10 @@ const observerPortfolio = new IntersectionObserver((entries) => {
 }, { threshold: 0.2 });
 portfolioItems.forEach(item => observerPortfolio.observe(item));
 
+
+
+
+
 // About
 const aboutContainer = document.querySelector('.about-container');
 const observerAbout = new IntersectionObserver((entries) => {
@@ -35,6 +25,11 @@ const observerAbout = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.2 });
 observerAbout.observe(aboutContainer);
+
+
+
+
+
 
 // Brands
 const brandCards = document.querySelectorAll('.brands-logos div');
@@ -49,6 +44,11 @@ const observerBrands = new IntersectionObserver((entries) => {
 }, { threshold: 0.2 });
 brandCards.forEach(card => observerBrands.observe(card));
 
+
+
+
+
+
 // Contacto
 const contactForm = document.querySelector('#contact form');
 const observerContact = new IntersectionObserver((entries) => {
@@ -59,3 +59,28 @@ const observerContact = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.2 });
 observerContact.observe(contactForm);
+
+
+// Navbar scroll
+const nav = document.querySelector('.nav');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 50) {
+    nav.classList.add('scrolled');
+  } else {
+    nav.classList.remove('scrolled');
+  }
+});
+
+// Hamburger
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('abierto');
+});
+
+// Cerrar menu al clickear un link
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('abierto');
+  });
+});

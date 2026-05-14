@@ -60,5 +60,14 @@
         }
 
 
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+    
+      .footer {
+        padding: 40px 24px 0;
+      }
+
     
 }
