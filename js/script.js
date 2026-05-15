@@ -84,3 +84,19 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     navLinks.classList.remove('abierto');
   });
 });
+
+
+
+/* BOTON WSP */
+
+const lista = document.querySelector('.listaWsp');
+const btnWsp = document.querySelector('#btnWsp');
+console.log(btnWsp)
+
+btnWsp.addEventListener("click", function(){
+
+  lista.classList.toggle("listaActivada");
+
+
+
+})
