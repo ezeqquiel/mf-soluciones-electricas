@@ -91,7 +91,7 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 
 const lista = document.querySelector('.listaWsp');
 const btnWsp = document.querySelector('#btnWsp');
-console.log(btnWsp)
+
 
 btnWsp.addEventListener("click", function(){
 
