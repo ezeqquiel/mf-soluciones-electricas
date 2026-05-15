@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -6,7 +8,8 @@
 
 
 body{
-    background: #FFFFFF;
+    font-family: 'Barlow', sans-serif;
+    background: #111c2d;
 }
 
 
@@ -342,6 +345,7 @@ section{
   background: #1A2B4A;
   text-align: center;
   width: 95%;
+
 }
 
 .portfolio h2 {
@@ -356,14 +360,14 @@ section{
   display: flex;
   flex-direction: column;
   gap: 60px;
-  max-width: 1000px;
+  max-width: 1800px;
   margin: 0 auto;
 }
 
 .portfolio-item {
   display: flex;
   align-items: flex-start;
-  gap: 40px;
+  gap: 12rem;
   opacity: 0;
   transition: opacity 0.7s ease, transform 0.7s ease;
 }
@@ -379,6 +383,7 @@ section{
 .portfolio-texto {
   display: flex;
   flex-direction: column;
+ 
   justify-content: center;
   padding: 20px 0;
 }
@@ -393,7 +398,8 @@ section{
 .portfolio-texto p {
   font-size: 15px;
   color: #a0aec0;
-  line-height: 1.7;
+  line-height: 3;
+  text-align: start;
 }
 
 .deIzquierda {
@@ -432,8 +438,8 @@ section{
 /* ===== ABOUT ===== */
 .about {
   padding: 80px 40px;
-  background: #F4F4F4;
-  width: 95%;
+  background: #162036;
+  width: 100%;
 }
 
 .about-container {
@@ -458,7 +464,7 @@ section{
 
 .about-text h2 {
   font-size: 32px;
-  color: #1A2B4A;
+  color: #F5A623;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 24px;
@@ -475,8 +481,8 @@ section{
 
 .about-text p {
   font-size: 16px;
-  color: #555;
-  line-height: 1.8;
+  color: #a0aec0;
+    line-height: 1.8;
   margin-bottom: 16px;
 }
 
@@ -517,8 +523,8 @@ section{
 .brands-logos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  max-width: 900px;
+  gap: 8rem;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -544,8 +550,8 @@ section{
 }
 
 .brands-logos img {
-  width: 100px;
-  height: 100px;
+  width: 180px;
+  height: 180px;
   object-fit: contain;
   border-radius: 50%;
   margin-bottom: 16px;
@@ -577,7 +583,7 @@ section{
 /* ===== CONTACT ===== */
 .contact {
   padding: 80px 40px;
-  background: #F4F4F4;
+  background: #162036;
   text-align: center;
   width: 80%;
   margin-bottom: 10rem;
@@ -585,7 +591,7 @@ section{
 
 .contact h2 {
   font-size: 32px;
-  color: #1A2B4A;
+  color: #F5A623;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 40px;
@@ -606,9 +612,10 @@ section{
   display: flex;
   flex-direction: column;
   gap: 16px;
-  background: white;
+  background: #1A2B4A;
   padding: 40px;
   border-radius: 16px;
+  border: 1px solid #2d4270;
   box-shadow: 0 8px 30px rgba(0,0,0,0.08);
   text-align: left;
   opacity: 0;
@@ -623,19 +630,20 @@ section{
 
 #contact input,
 #contact textarea {
+  background: #243654;
+  color: #ffffff;
   padding: 14px 16px;
   border-radius: 10px;
-  border: 1.5px solid #e0e0e0;
+  border: 1.5px solid #2d4270;
   font-size: 15px;
   font-family: inherit;
   outline: none;
-  background: #fafafa;
   transition: border-color 0.2s ease;
 }
 
 #contact input:focus,
 #contact textarea:focus {
-  border-color: #1A2B4A;
+  border-color: #F5A623;
   background: white;
 }
 
@@ -661,7 +669,10 @@ section{
   transform: translateY(-1px);
 }
 
-
+#contact input::placeholder,
+#contact textarea::placeholder {
+  color: #a0aec0;
+}
 
 
 
