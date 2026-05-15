@@ -119,7 +119,7 @@ header{
 .hero {
   position: relative;
   height: 105vh;
-  background-image: url('/img/trabajo1.jpg');
+  background-image: url('img/trabajo1.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed; /* efecto parallax suave */
@@ -344,7 +344,7 @@ section{
   padding: 80px 40px;
   background: #1A2B4A;
   text-align: center;
-  width: 95%;
+  width: 85%;
 
 }
 
