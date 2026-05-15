@@ -57,6 +57,8 @@ body{
   padding: 0;
 }
 
+
+
 .nav-links a {
   color: #ffffff;
   text-decoration: none;
@@ -86,6 +88,13 @@ body{
 
 .nav-links a:hover::after {
   width: 100%;
+}
+/* Hamburger */
+.hamburger {
+  display: none;
+  color: white;
+  font-size: 26px;
+  cursor: pointer;
 }
 
 /* Hamburger */

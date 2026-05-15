@@ -36,13 +36,40 @@
 
 @media (max-width: 768px){
 /* NAV */
-    .hamburger{
-        display: block;
-    }
+    .nav {
+    padding: 16px 24px;
+    background: #111c2d;
+  }
 
-    .nav-links{
-        display: none;
-    }
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #111c2d;
+    flex-direction: column;
+    gap: 0;
+    padding: 16px 0;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  }
+
+  .nav-links.abierto {
+    display: flex;
+  }
+
+  .nav-links li {
+    border-bottom: 1px solid #2d4270;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 14px 24px;
+  }
 
     .imgContHero{
         width: 320px;
