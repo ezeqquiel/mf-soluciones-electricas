@@ -851,20 +851,22 @@ section{
   position: fixed;
   bottom: 110px;
   right: 55px;   
-  width: 120px;
+  width: 150px;
   height: 80px;
   list-style: none;
   border: 2px solid #F5A623;
   background: #1A2B4A;
   border-radius: 10px;
 
-
 }
 .listaActivada a{
   text-decoration: none;
   color: white;
-}
 
+}
+.listaActivada a i{
+  padding: 0 8px 0 0;
+}
 
 
 .whatsapp-button{
