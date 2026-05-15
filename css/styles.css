@@ -13,6 +13,13 @@ body{
 }
 
 
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+
 
 
 
@@ -242,7 +249,7 @@ header{
 
 /* MAIN */
 section{
-    scroll-margin-top: 10px;
+    scroll-margin-top: 12rem;
     border-radius: 16px;
 }
 .mainSection{

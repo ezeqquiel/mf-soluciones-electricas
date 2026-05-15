@@ -134,6 +134,7 @@
         .footer-redes{
           gap: 3rem;
         }
+        
       .footer-grid {
         grid-template-columns: 1fr;
         gap: 5rem;
