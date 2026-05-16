@@ -4,7 +4,8 @@
   }
 
   .brands-logos {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    max-width: 800px;
   }
 
   .footer-grid {
@@ -31,6 +32,11 @@
       
       .portfolio-item img{
         width: 100%;
+      }
+
+      .services-grid{
+          grid-template-columns:1fr;
+            max-width: 800px;
       }
 }
 

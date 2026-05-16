@@ -8,7 +8,7 @@ const observerPortfolio = new IntersectionObserver((entries) => {
       }, index * 200);
     }
   });
-}, { threshold: 0.2 });
+}, { threshold: 0.1 });
 portfolioItems.forEach(item => observerPortfolio.observe(item));
 
 
