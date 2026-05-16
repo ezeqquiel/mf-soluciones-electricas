@@ -134,16 +134,57 @@ header{
 /* HERO */
 .hero {
   position: relative;
-  height: 105vh;
-  background-image: url('/img/trabajo1.jpg');
+  height: 100vh;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; 
+  background-attachment: fixed;
+  transition: background-image 0.8s ease;
+  overflow: hidden;
+}
+.hero-slides {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1.2s ease; /* ← acá controlás la velocidad del fade */
+}
+.hero-slide.activo {
+  opacity: 1;
+}
+.hero-dots {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.4);
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.dot.activo {
+  background: #F5A623;
+  transform: scale(1.3);
 }
 
 .hero-overlay {
   position: absolute;
   inset: 0;
+  z-index: 1; 
   background: linear-gradient(
     to right,
     rgba(26, 43, 74, 0.92) 40%,
@@ -156,10 +197,17 @@ header{
 
 .hero-contenido {
   max-width: 600px;
-  padding: 0 20px; /* ← esto evita que el contenido toque los bordes */
+  margin-top: 80px; 
+  padding: 0 20px; 
   opacity: 0;
   transform: translateY(30px);
   animation: fadeUp 0.9s ease forwards 0.3s;
+}
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .hero-tag {
@@ -170,7 +218,6 @@ header{
   text-transform: uppercase;
   margin-bottom: 16px;
 }
-
 .hero h1 {
   font-size: clamp(36px, 5vw, 64px);
   color: #ffffff;
@@ -178,10 +225,10 @@ header{
   line-height: 1.1;
   margin-bottom: 20px;
 }
-
 .hero h1 span {
   color: #F5A623;
 }
+
 
 .hero-subtitulo {
   font-size: 17px;
@@ -195,7 +242,6 @@ header{
   gap: 16px;
   flex-wrap: wrap;
 }
-
 .btn-primary {
   background: #F5A623;
   color: #1A2B4A;
@@ -721,10 +767,11 @@ section{
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns:repeat(2, 1fr);
+  place-items: center;
   gap: 10rem;
   max-width: 1000px;
-    padding: 0 20px; /* ← esto evita que el contenido toque los bordes */
+  padding: 0 20px; /* ← esto evita que el contenido toque los bordes */
   padding: 0 20px; 
   margin: 0 auto;
   padding-bottom: 40px;

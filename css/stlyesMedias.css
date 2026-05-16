@@ -12,19 +12,6 @@
     grid-template-columns: 1fr;
     place-items: center;
   }
-        .footer-links{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-      .footer-links ul{
-        display: flex;
-        flex-direction: row;
-        gap: 3rem;
-        padding-top: 2rem;
-      }
-
 
       .portfolio-item{
         flex-direction: column;
@@ -150,34 +137,10 @@
         padding: 40px 24px 0;
       }
 
-      .footer-links{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-      .footer-links ul{
-        display: flex;
-        flex-direction: row;
-        gap: 2.5rem;
-        padding-top: 2rem;
-      }
       .footer-contacto{
         align-items: center;
         justify-content: center;
-        gap: 1.5rem;
+        gap: 0.8rem;
       }
 
 }
-
-
-@media (max-width: 476px){
-      .footer-links ul{
-        display: flex;
-        flex-direction: column;
-        gap: 1.8rem;
-      }
-
-
-}
-

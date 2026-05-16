@@ -15,6 +15,10 @@ portfolioItems.forEach(item => observerPortfolio.observe(item));
 
 
 
+
+
+
+
 // About
 const aboutContainer = document.querySelector('.about-container');
 const observerAbout = new IntersectionObserver((entries) => {
@@ -25,6 +29,9 @@ const observerAbout = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.2 });
 observerAbout.observe(aboutContainer);
+
+
+
 
 
 
@@ -49,6 +56,8 @@ brandCards.forEach(card => observerBrands.observe(card));
 
 
 
+
+
 // Contacto
 const contactForm = document.querySelector('#contact form');
 const observerContact = new IntersectionObserver((entries) => {
@@ -61,6 +70,13 @@ const observerContact = new IntersectionObserver((entries) => {
 observerContact.observe(contactForm);
 
 
+
+
+
+
+
+
+
 // Navbar scroll
 const nav = document.querySelector('.nav');
 window.addEventListener('scroll', () => {
@@ -70,6 +86,14 @@ window.addEventListener('scroll', () => {
     nav.classList.remove('scrolled');
   }
 });
+
+
+
+
+
+
+
+
 
 // Hamburger
 const hamburger = document.querySelector('.hamburger');
@@ -87,17 +111,48 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 
 
 
+
+
+
+
+
 /* BOTON WSP */
 
 const lista = document.querySelector('.listaWsp');
 const btnWsp = document.querySelector('#btnWsp');
 
-
 btnWsp.addEventListener("click", function(){
 
   lista.classList.toggle("listaActivada");
-
-
-
 })
 
+
+
+
+
+
+
+
+// HERO //
+const slides = document.querySelectorAll('.hero-slide');
+const dots = document.querySelectorAll('.dot');
+let indice = 0;
+
+function cambiarSlide(nuevoIndice) {
+  slides[indice].classList.remove('activo');
+  dots[indice].classList.remove('activo');
+
+  indice = nuevoIndice;
+
+  slides[indice].classList.add('activo');
+  dots[indice].classList.add('activo');
+}
+
+setInterval(() => {
+  const siguiente = (indice + 1) % slides.length;
+  cambiarSlide(siguiente);
+}, 3000);
+
+dots.forEach((dot, i) => {
+  dot.addEventListener('click', () => cambiarSlide(i));
+});
