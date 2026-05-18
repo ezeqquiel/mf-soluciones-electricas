@@ -652,6 +652,12 @@ section{
 /* ===== CONTACT ===== */
 .sectForm{
   width: 100%;
+  margin-bottom: 20px;
+}
+.sectForm h2{
+  text-align: center;
+  color: #F5A623;
+  margin-bottom: 20px;
 }
 #formulario-contacto {
   width: 40%;
