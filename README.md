@@ -3,8 +3,6 @@ Landing page para MF Soluciones Eléctricas - Electricista en Rosario
 
 
 /// Terminar
-- footer la parte de navegacion reemplzar por algo o simplemente eliminarlo (X)
-- Arreglar las imagenes
 - Agregar mas contenido al porfolio (ema me tiene q decir)
 - El icono del nav de la lamparita me tiene que dirigir al inicio de todo
 - Hacer el formulario con el formJS

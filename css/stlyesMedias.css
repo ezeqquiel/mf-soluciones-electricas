@@ -1,4 +1,16 @@
+@media (max-width: 425px){
+  .brands-logos{
+    padding: 0 5px;
+  }
+}
+
+
+
+
 @media (max-width: 1024px) { /* LAPTOP */
+  #formulario-contacto{
+    width: 60%;
+  }
   .portfolio-item img {
     width: 45%;
   }
@@ -28,6 +40,10 @@
 }
 
 @media (max-width: 768px){
+    #formulario-contacto{
+    width: 80%;
+    padding: 20px;
+  } 
 /* NAV */
     .nav {
     padding: 16px 24px;
@@ -119,8 +135,7 @@
         }
         .portfolio,
         .about,
-        .brands,
-        .contact {
+        .brands{
           padding: 60px 20px;
         }
 

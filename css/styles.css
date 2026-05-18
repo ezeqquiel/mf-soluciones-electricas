@@ -650,34 +650,11 @@ section{
 
 
 /* ===== CONTACT ===== */
-.contact {
-  padding: 80px 40px;
-  background: #162036;
-  text-align: center;
+.sectForm{
   width: 100%;
-  margin-bottom: 10rem;
 }
-
-.contact h2 {
-  font-size: 32px;
-  color: #F5A623;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-bottom: 40px;
-}
-
-.contact h2::after {
-  content: '';
-  display: block;
-  width: 50px;
-  height: 3px;
-  background: #F5A623;
-  margin: 10px auto 0;
-}
-
-#contact form {
-  max-width: 520px;
-    padding: 0 20px; /* ← esto evita que el contenido toque los bordes */
+#formulario-contacto {
+  width: 40%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -686,43 +663,40 @@ section{
   padding: 40px;
   border-radius: 16px;
   border: 1px solid #2d4270;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.3);
   text-align: left;
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
 }
 
-#contact form.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-#contact input,
-#contact textarea {
-  background: #243654;
-  color: #ffffff;
+#formulario-contacto input,
+#formulario-contacto textarea {
   padding: 14px 16px;
   border-radius: 10px;
   border: 1.5px solid #2d4270;
   font-size: 15px;
   font-family: inherit;
   outline: none;
-  transition: border-color 0.2s ease;
+  background: #243654;
+  color: #ffffff;
+  transition: border-color 0.2s ease, background 0.2s ease;
 }
 
-#contact input:focus,
-#contact textarea:focus {
+#formulario-contacto input::placeholder,
+#formulario-contacto textarea::placeholder {
+  color: #a0aec0;
+}
+
+#formulario-contacto input:focus,
+#formulario-contacto textarea:focus {
   border-color: #F5A623;
-  background: white;
+  background: #2d4270;
 }
 
-#contact textarea {
+#formulario-contacto textarea {
   resize: vertical;
   min-height: 130px;
 }
 
-#contact button {
+#formulario-contacto button {
   padding: 14px;
   border: none;
   background: #F5A623;
@@ -731,19 +705,25 @@ section{
   cursor: pointer;
   font-size: 16px;
   font-weight: 700;
+  letter-spacing: 0.5px;
   transition: background 0.2s ease, transform 0.1s ease;
 }
 
-#contact button:hover {
+#formulario-contacto button:hover {
   background: #e09415;
-  transform: translateY(-1px);
+  transform: translateY(-2px);
 }
 
-#contact input::placeholder,
-#contact textarea::placeholder {
-  color: #a0aec0;
+#formulario-contacto button:active {
+  transform: translateY(0);
 }
 
+#form-status {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  min-height: 20px;
+}
 
 
 
@@ -772,7 +752,6 @@ section{
   gap: 10rem;
   max-width: 1000px;
   padding: 0 20px; /* ← esto evita que el contenido toque los bordes */
-  padding: 0 20px; 
   margin: 0 auto;
   padding-bottom: 40px;
   border-bottom: 1px solid #2d4270;
@@ -967,6 +946,10 @@ i{
     box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
   }
 }
+
+
+
+  
 /* Icono */
 .whatsapp-button::before {
   content: "";

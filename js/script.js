@@ -28,7 +28,7 @@ const observerAbout = new IntersectionObserver((entries) => {
     }
   });
 }, { threshold: 0.2 });
-observerAbout.observe(aboutContainer);
+if (aboutContainer) observerAbout.observe(aboutContainer);
 
 
 
@@ -59,7 +59,7 @@ brandCards.forEach(card => observerBrands.observe(card));
 
 
 // Contacto
-const contactForm = document.querySelector('#contact form');
+const contactForm = document.querySelector('#formulario-contacto');
 const observerContact = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -67,7 +67,9 @@ const observerContact = new IntersectionObserver((entries) => {
     }
   });
 }, { threshold: 0.2 });
-observerContact.observe(contactForm);
+if (contactForm) {
+  observerContact.observe(contactForm);
+}
 
 
 
@@ -100,6 +102,7 @@ const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
 hamburger.addEventListener('click', () => {
   navLinks.classList.toggle('abierto');
+
 });
 
 // Cerrar menu al clickear un link
@@ -155,4 +158,31 @@ setInterval(() => {
 
 dots.forEach((dot, i) => {
   dot.addEventListener('click', () => cambiarSlide(i));
+});
+
+
+//// FORMULARIO JS
+emailjs.init('20lYjnWzG3QkOMXHG'); // ← Public Key
+
+document.getElementById('formulario-contacto').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const status = document.getElementById('form-status');
+  status.textContent = 'Enviando...';
+  status.style.color = '#a0aec0';
+
+  emailjs.send('service_z801wlj', 'template_c5eakli', {
+    nombre: document.getElementById('nombre').value,
+    email: document.getElementById('email').value,
+    mensaje: document.getElementById('mensaje').value,
+  })
+  .then(() => {
+    status.textContent = '✅ Mensaje enviado correctamente.';
+    status.style.color = '#F5A623';
+    document.getElementById('formulario-contacto').reset();
+  })
+  .catch(() => {
+    status.textContent = '❌ Hubo un error, intentá de nuevo.';
+    status.style.color = '#e74c3c';
+  });
 });
