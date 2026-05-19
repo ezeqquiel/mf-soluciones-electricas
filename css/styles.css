@@ -590,15 +590,15 @@ section{
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   max-width: 1400px;
-    padding: 0 20px; /* ← esto evita que el contenido toque los bordes */
+  padding: 0 20px; 
   margin: 0 auto;
   
 }
 
-.brands-logos div {
+.divBrands {
   background: #243654;
   border-radius: 16px;
-  padding: 30px 20px;
+  padding: 5px 20px;
   border: 1px solid #2d4270;
   transition: transform 0.3s ease, border-color 0.3s ease;
   opacity: 0;
@@ -612,7 +612,7 @@ section{
   transform: translateY(0);
 }
 
-.brands-logos div:hover {
+.divBrands:hover {
   border-color: #F5A623;
   transform: translateY(-4px);
   box-shadow: 0 4px 20px rgba(0,0,0,0.30)
@@ -638,12 +638,23 @@ section{
   line-height: 1.6;
 }
 
+.redesBrand{
+  position: absolute;
+  display: flex;
+  justify-content: end;
+  gap: 0.8rem;
+  width: 40px;
+  height: 40px;
+}
 
-
-
-
-
-
+.redesBrand3{
+  position: absolute;
+  display: flex;
+  justify-content: start;
+  gap: 0.8rem;
+  width: 40px;
+  height: 40px;
+}
 
 
 
