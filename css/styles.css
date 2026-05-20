@@ -890,6 +890,7 @@ i{
   display: none;
   width: 150px;
   background-color: wheat;
+  z-index: 1000;
 }
 .listaWsp li a:hover {
   color: #F5A623;
