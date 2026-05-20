@@ -284,10 +284,6 @@ header{
 }
 
 
-
-
-
-
 .btn-secondary:hover {
   background: #F5A623;
   color: #1A2B4A;
@@ -374,6 +370,16 @@ section{
   padding: 32px 24px;
   border: 1px solid #2d4270;
   transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.service-card {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.service-card.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .service-card:hover {
@@ -504,14 +510,6 @@ section{
   padding-bottom: 60px;
   border-bottom: 1px solid #2d4270;
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -702,6 +700,7 @@ section{
   border: 1px solid #2d4270;
   box-shadow: 0 8px 30px rgba(0,0,0,0.3);
   text-align: left;
+
 }
 
 #formulario-contacto input,

@@ -162,6 +162,20 @@ dots.forEach((dot, i) => {
 
 
 
+/* Service */
+const serviceCards = document.querySelectorAll('.service-card');
+const observerServices = new IntersectionObserver((entries) => {
+  entries.forEach((entry, index) => {
+    if (entry.isIntersecting) {
+      setTimeout(() => {
+        entry.target.classList.add('visible');
+      }, index * 150);
+    }
+  });
+}, { threshold: 0.2 });
+serviceCards.forEach(card => observerServices.observe(card));
+
+
 
 
 
