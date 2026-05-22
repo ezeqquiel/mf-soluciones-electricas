@@ -511,12 +511,38 @@ section{
   border-bottom: 1px solid #2d4270;
 }
 
-.portActivate{
- display: none;
+
+
+/* PORTFOLIO MAS INFO */
+
+
+.img-contenedor {
+  position: relative; /* ← el padre necesita position relative */
+  overflow: hidden;
+  width:50%;
 }
-.imgTrabajo1{
-  
+
+.img-contenedor img {
+
+  width: 100%;
 }
+
+.portfolio-hover {
+  position: absolute; /* ← se posiciona respecto al padre */
+  inset: 0;           /* ← ocupa todo el espacio del padre */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(26, 43, 74, 0.75);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.img-contenedor:hover .portfolio-hover {
+  opacity: 1; /* ← aparece al hacer hover */
+}
+
+
 
 
 

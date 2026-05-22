@@ -146,20 +146,27 @@
     <div class="portfolio-lista">
 
         <div class="portfolio-item deIzquierda" id="portf1">
-          <div class="portActivate">
-            aaa
+              <div class="img-contenedor">
+                <img src="img/trabajo1.jpg" alt="Proyecto DIKA">
+                <div class="portfolio-hover"> 
+                  <i class="fas fa-plus"></i>
+                </div>
+              </div>      
+          <div class="portfolio-texto">
+            <h3>Moreno</h3>
+            <p><i class="fa-solid fa-bolt"></i> Reforma integral junto a <strong>Dika.</strong><br>
+               <i class="fa-solid fa-bolt"></i> <strong>Renovamos por completo</strong> el espacio <strong>cuidando cada detalle.</strong><br>
+               <i class="fa-solid fa-bolt"></i> La iluminación fue clave para dar calidez y estilo.</p>
           </div>
-              <img src="img/trabajo1.jpg" alt="Proyecto DIKA" class="imgTrabajo1">
-            <div class="portfolio-texto">
-              <h3>Moreno</h3>
-              <p><i class="fa-solid fa-bolt"></i> Reforma integral junto a <strong>Dika.</strong><br>
-                 <i class="fa-solid fa-bolt"></i> <strong>Renovamos por completo</strong> el espacio <strong>cuidando cada detalle.</strong><br>
-                 <i class="fa-solid fa-bolt"></i> La iluminación fue clave para dar calidez y estilo.</p>
-            </div>
         </div>
 
         <div class="portfolio-item deDerecha" id="portf2">
-          <img src="img/trabajo2.jpg" alt="Proyecto Kentucky">
+          <div class="img-contenedor">
+            <img src="img/trabajo2.jpg" alt="Proyecto DIKA">
+            <div class="portfolio-hover">
+              <i class="fas fa-plus"></i>
+            </div>
+          </div>
           <div class="portfolio-texto">
             <h3>Kentucky</h3>
             <p><i class="fa-solid fa-bolt"></i> Junto a Estudio M realizamos una trama de luz <strong>entre pared y lor sit amet.</strong><br>
@@ -168,7 +175,12 @@
         </div>
 
         <div class="portfolio-item deIzquierda" id="portf3">
-          <img src="img/trabajo3.jpg" alt="San Lorenzo">
+          <div class="img-contenedor">
+            <img src="img/trabajo3.jpg" alt="Proyecto DIKA">
+            <div class="portfolio-hover">
+              <i class="fas fa-plus"></i>
+            </div>
+          </div>
           <div class="portfolio-texto">
             <h3>San Lorenzo</h3>
             <p><i class="fa-solid fa-bolt"></i> Obra y dirección DIKA.<br>
@@ -181,7 +193,12 @@
         </div>
 
         <div class="portfolio-item deDerecha" id="portf4">
-          <img src="img/trabajo4.jpg" alt="Proyecto 4">
+          <div class="img-contenedor">
+            <img src="img/trabajo4.jpg" alt="Proyecto DIKA">
+            <div class="portfolio-hover">
+              <i class="fas fa-plus"></i>
+            </div>
+          </div>
           <div class="portfolio-texto">
             <h3>Proyecto 4</h3>
             <p><i class="fa-solid fa-bolt"></i> Descripción Lorem <strong>ipsum dolor sit amet</strong>. breve del trabajo realizado.<br>
@@ -300,10 +317,17 @@
 
 
 
-
-
-
-
+<!-- MODAL PORTFOLIO -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal-contenido">
+    <button class="modal-cerrar" id="modalCerrar"><i class="fas fa-times"></i></button>
+    <img src="" alt="" id="modalImg">
+    <div class="modal-info">
+      <h2 id="modalTitulo"></h2>
+      <p id="modalDescripcion"></p>
+    </div>
+  </div>
+</div>
 
 
 </main>
