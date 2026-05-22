@@ -12,6 +12,10 @@
 
 
 @media (max-width: 1024px) { /* LAPTOP */
+
+  .img-contenedor{
+    width: 100%;
+  }
   #formulario-contacto{
     width: 60%;
   }
