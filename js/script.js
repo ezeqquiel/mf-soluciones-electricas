@@ -183,7 +183,7 @@ serviceCards.forEach(card => observerServices.observe(card));
 
 
 //// FORMULARIO JS
-emailjs.init('20lYjnWzG3QkOMXHG'); // ← Public Key
+emailjs.init('IxRrPMZgQAOkD90AC'); // ← Public Key
 
 document.getElementById('formulario-contacto').addEventListener('submit', function(e) {
   e.preventDefault();
@@ -192,7 +192,7 @@ document.getElementById('formulario-contacto').addEventListener('submit', functi
   status.textContent = 'Enviando...';
   status.style.color = '#a0aec0';
 
-  emailjs.send('service_z801wlj', 'template_c5eakli', {
+  emailjs.send('service_htiseei', 'template_gw5o8hu', {
     nombre: document.getElementById('nombre').value,
     email: document.getElementById('email').value,
     mensaje: document.getElementById('mensaje').value,
