@@ -627,7 +627,7 @@ section{
   position: absolute;
   top: 12px;
   right: 12px;
-  background: #F5A623;
+  background: #000000;
   border: none;
   border-radius: 50%;
   width: 36px;
@@ -641,11 +641,6 @@ section{
   z-index: 10;
   transition: background 0.2s ease;
 }
-
-.modal-cerrar:hover {
-  background: #e09415;
-}
-
 
 
 
