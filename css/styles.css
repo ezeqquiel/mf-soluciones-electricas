@@ -488,7 +488,7 @@ section{
 .portfolio-texto p {
   font-size: 15px;
   color: #a0aec0;
-  line-height: 3;
+  line-height: 2;
   text-align: start;
 }
 
@@ -541,7 +541,9 @@ section{
 .img-contenedor:hover .portfolio-hover {
   opacity: 1; /* ← aparece al hacer hover */
 }
-
+.portfolio-hover{
+font-size: 50px;
+}
 
 /* Modal */
 .modal-galeria {

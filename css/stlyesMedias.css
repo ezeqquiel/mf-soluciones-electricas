@@ -139,7 +139,9 @@
           grid-template-columns: 1fr;
         }
         .portfolio-texto p {
-          line-height: 2.5;
+          line-height: 1.5;
+        }
+        .portfolio-texto{
         }
         .portfolio,
         .about,
