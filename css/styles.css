@@ -642,7 +642,9 @@ section{
   transition: background 0.2s ease;
 }
 
-
+.modal-cerrar:hover{
+  background-color: #152548;;
+}
 
 
 
