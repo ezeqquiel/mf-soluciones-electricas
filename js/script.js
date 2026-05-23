@@ -207,3 +207,42 @@ document.getElementById('formulario-contacto').addEventListener('submit', functi
     status.style.color = '#e74c3c';
   });
 });
+
+
+
+
+
+
+/* PORFOLIO DINAMICO */ 
+// Abrir modal
+document.querySelectorAll('.img-contenedor').forEach(contenedor => {
+  contenedor.addEventListener('click', () => {
+    const modalId = contenedor.dataset.modal;
+    document.getElementById(modalId).classList.add('abierto');
+  });
+});
+
+// Cerrar con botón X
+document.querySelectorAll('.modal-cerrar').forEach(btn => {
+  btn.addEventListener('click', () => {
+    btn.closest('.modal-overlay').classList.remove('abierto');
+  });
+});
+
+// Cerrar clickeando fuera
+document.querySelectorAll('.modal-overlay').forEach(overlay => {
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) {
+      overlay.classList.remove('abierto');
+    }
+  });
+});
+
+// Cerrar con ESC
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    document.querySelectorAll('.modal-overlay.abierto').forEach(overlay => {
+      overlay.classList.remove('abierto');
+    });
+  }
+});
